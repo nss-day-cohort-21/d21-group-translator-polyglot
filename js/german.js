@@ -10,7 +10,8 @@ var German = (function(originalDic){
     "year":"Jahr"
   }
 
-  originalDic.getGerman = function(userInput){
-    return germanLexicon
+  originalDic.getGerman = function(){
+    return germanLexicon;
   };
-})(Dictionary || {});
+  return originalDic;
+})(Dictionary);
