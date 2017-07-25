@@ -15,4 +15,3 @@ translateBtn.addEventListener('click', function(event) {
         }
     });
 });
-
