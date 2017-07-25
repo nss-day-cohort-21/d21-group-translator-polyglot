@@ -13,4 +13,5 @@ var Spanish = (function(originalDictionary) {
     originalDictionary.getSpanish = function() {
         return spanish;
     }
+    return originalDictionary;
 })(Dictionary || {});
