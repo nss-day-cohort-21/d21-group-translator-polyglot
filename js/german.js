@@ -1,17 +1,9 @@
-var German = (function(originalDic){
-  let lexicon = {"merry":"fröhlich", "christmas":"weihnachten", "and":"und", "happy":"frohes", "new":"neues", "year":"Jahr"}
+'use strict';
 
-  let userInput = ["merry", "happy", "new", "year"];
-  let translated = [];
+var German = (function(originalDic){
+  let germanLexicon = {"merry":"fröhlich", "christmas":"weihnachten", "and":"und", "happy":"frohes", "new":"neues", "year":"Jahr"}
+
   originalDic.getGerman = function(userInput){
-    for (var word in lexicon) {
-      for (var i = 0; i < userInput.length; i++) {
-        if(userInput[i] === word) {
-          translated[i].push(lexicon[word]);
-        } else {
-          translated[i].push("unknow");
-        }
-      }
-    }
+    return germanLexicon
   };
 })(Dictionary || {});
