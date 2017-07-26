@@ -15,7 +15,7 @@ let getLanguage = function(language) {
     if(language[word]) {
       translation += `${language[word]} `
     } else {
-      language[word] = prompt(`We don't know that word? Do you know the definition of ${word}?`)
+      translation += " " + prompt(`We don't know that word? Do you know the definition of "${word}"?`)
     }
 
   });
@@ -24,19 +24,19 @@ let getLanguage = function(language) {
   output.value = translation;
 }
 
-translateBtn.addEventListener('click', function(event) {
-    options.forEach(function(option) {
-        if (option.value === 'spanish') {
-            getLanguage(Dictionary.getSpanish());
-        } else if (option.value === 'french') {
-            getLanguage(Dictionary.translatetofrench());
-        } else if (option.value === 'german') {
-            getLanguage(Dictionary.getGerman());
-        } else if (option.value === 'braille') {
-          getLanguage(Dictionary.getBraille());
-        }
-    });
-});
+// translateBtn.addEventListener('click', function(event) {
+//     options.forEach(function(option) {
+//         if (option.value === 'spanish') {
+//             getLanguage(Dictionary.getSpanish());
+//         } else if (option.value === 'french') {
+//             getLanguage(Dictionary.translatetofrench());
+//         } else if (option.value === 'german') {
+//             getLanguage(Dictionary.getGerman());
+//         } else if (option.value === 'braille') {
+//           getLanguage(Dictionary.getBraille());
+//         }
+//     });
+// });
 
 let voiceOptions = document.getElementById('voice');
 let volumeSlider = document.getElementById('volume');
