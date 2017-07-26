@@ -24,6 +24,20 @@ let getLanguage = function(language) {
   output.value = translation;
 }
 
+-// translateBtn.addEventListener('click', function(event) {
+ -//     options.forEach(function(option) {
+ -//         if (option.value === 'spanish') {
+ -//             getLanguage(Dictionary.getSpanish());
+ -//         } else if (option.value === 'french') {
+ -//             getLanguage(Dictionary.translatetofrench());
+ -//         } else if (option.value === 'german') {
+ -//             getLanguage(Dictionary.getGerman());
+ -//         } else if (option.value === 'braille') {
+ -//           getLanguage(Dictionary.getBraille());
+ -//         }
+ -//     });
+ -// });
+
 
 let voiceOptions = document.getElementById('voice');
 let volumeSlider = document.getElementById('volume');
